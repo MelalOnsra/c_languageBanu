@@ -1,23 +1,32 @@
-//create a username and password and check it with function
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+int main(void)
+{
+        float cash=5000, x; 
+        char username[20];
+        int password=9090;
+        int option;
+        double account_number; 
+        
 
-#include "stdio.h"
-#include "stdlib.h"
-#include "string.h"
-#include "ctype.h" // for isdigit()
-
-void login(char username[], char password[]) {
-//   your code here  
-//   code burada
-  
-}
-
-int main() {
-    char username[20];
-    char password[20];
-    printf("Enter your username: ");
-    scanf("%s", username);
-    printf("Enter your password: ");
-    scanf("%s", password);
-    login(username, password);
-    return 0;
-}
+        printf("Welcome To Berkant PROGRAMMING ");
+        printf("Please enter your username: ");
+        scanf("%d",&username);
+        gets(username);
+        printf("Please enter your password: ");
+        scanf("%d", &password);
+        
+        while(password!=9090)
+        {
+                printf("Wrong Password. Try again... ");
+                printf("Please enter your password: ", password); 
+                scanf("%d", &password);                           
+                if (password==9090)
+                {
+                        break;
+                }
+        }
+                
+                return 0;
+        }
